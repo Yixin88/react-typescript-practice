@@ -23,6 +23,7 @@ import RandomNumber from './components/restriction/RandomNumber';
 import Toast from './components/template-literals/Toast';
 import CustomButton from './components/html/Button';
 import CustomInput from './components/html/Input';
+import Text from './components/polymorphic/Text';
 
 
 function App() {
@@ -75,6 +76,11 @@ function App() {
       <Toast position='center'/>
       <CustomButton variant='primary' onClick={() => console.log('clicked')}>Primary Button</CustomButton>
       <CustomInput />
+
+      {/* //----Polymorphic Component----// */}
+      <Text size='lg' as='h1'>Heading</Text>
+      <Text size='lg' as='p'>Paragraph</Text>
+      <Text size='lg' as='label'>Label</Text>
     </div>
   );
 }
