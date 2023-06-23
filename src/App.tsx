@@ -20,6 +20,7 @@ import Private from './components/auth/Private';
 import Profile from './components/auth/Profile';
 import List from './components/generics/List';
 import RandomNumber from './components/restriction/RandomNumber';
+import Toast from './components/template-literals/Toast';
 
 
 function App() {
@@ -69,6 +70,7 @@ function App() {
       <Private isLoggedIn={true} Component={Profile}/>
       <List items={['Batman', 'Superman', 'Wonder Woman']} onClick={(item) => console.log(item)}/>
       <RandomNumber value={10} isPositive/>
+      <Toast position='center'/>
     </div>
   );
 }
